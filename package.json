@@ -1,0 +1,21 @@
+{
+  "name": "web-portofolio",
+  "version": "1.0.0",
+  "description": "Riyan's QA Engineer Portfolio",
+  "type": "module",
+  "scripts": {
+    "test":             "vitest run",
+    "test:watch":       "vitest",
+    "test:unit":        "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "test:e2e":         "playwright test",
+    "test:e2e:ui":      "playwright test --ui",
+    "coverage":         "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@playwright/test":      "^1.42.0",
+    "@vitest/coverage-v8":   "^1.4.0",
+    "jsdom":                 "^24.0.0",
+    "vitest":                "^1.4.0"
+  }
+}

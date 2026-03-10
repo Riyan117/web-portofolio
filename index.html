@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riyan — QA Engineer</title>
+  <meta name="description" content="Riyan — QA Engineer based in Jakarta, specializing in API testing, UI/Mobile automation, performance testing, and CI/CD." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/sections.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <!-- Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"  id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">R<span class="logo-dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://www.linkedin.com/in/riyan117/" target="_blank" rel="noopener" class="nav-cta">Let's Talk ↗</a>
+  </nav>
+
+  <!-- ═══════ HERO ═══════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-1" id="glow1"></div>
+      <div class="hero-glow glow-2" id="glow2"></div>
+    </div>
+
+    <div class="hero-deco deco-a" id="decoA"></div>
+    <div class="hero-deco deco-b" id="decoB"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge" id="heroBadge">
+        <span class="badge-dot"></span>
+        <span>Full Stack QA Engineer · Jakarta, Indonesia</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="h-line h-shimmer" id="hl1" data-text="Full Stack"></span>
+        <span class="h-line h-shimmer" id="hl2" data-text="Software Tester,"></span>
+        <span class="h-line h-accent" id="hl3" data-text="From Scratch."></span>
+      </h1>
+
+      <p class="hero-desc" id="heroDesc">
+        Hi, I'm <strong>Riyan</strong> — a QA Engineer who covers the entire testing
+        spectrum: from <strong>unit &amp; API</strong> to <strong>UI, mobile,</strong>
+        and <strong>performance</strong>. I build complete testing frameworks
+        from the ground up — zero to production-ready.
+
+      <div class="hero-btns" id="heroBtns">
+        <a href="#projects" class="btn-primary">View Work <span>→</span></a>
+        <a href="https://github.com/Riyan117" target="_blank" rel="noopener" class="btn-outline">GitHub ↗</a>
+      </div>
+
+      <div class="hero-stats" id="heroStats">
+        <div class="h-stat">
+          <span class="h-stat-n" data-count="4" data-suffix="+">0+</span>
+          <span class="h-stat-l">Specializations</span>
+        </div>
+        <div class="h-stat-sep"></div>
+        <div class="h-stat">
+          <span class="h-stat-n" data-count="7" data-suffix="+">0+</span>
+          <span class="h-stat-l">Certifications</span>
+        </div>
+        <div class="h-stat-sep"></div>
+        <div class="h-stat">
+          <span class="h-stat-n" data-count="12" data-suffix="+">0+</span>
+          <span class="h-stat-l">Tools & Techs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint" id="scrollHint">
+      <span class="sh-text">Scroll</span>
+      <div class="sh-line"><div class="sh-fill"></div></div>
+    </div>
+  </section>
+
+  <!-- ═══════ MARQUEE ═══════ -->
+  <div class="marquee-wrap">
+    <div class="marquee-belt">
+      <div class="marquee-row">
+        <span>Full Stack Testing</span><em>·</em>
+        <span>From Scratch</span><em>·</em>
+        <span>API Testing</span><em>·</em>
+        <span>UI Automation</span><em>·</em>
+        <span>Mobile Testing</span><em>·</em>
+        <span>Performance Testing</span><em>·</em>
+        <span>CI/CD Integration</span><em>·</em>
+        <span>Test Infrastructure</span><em>·</em>
+        <span>Quality Assurance</span><em>·</em>
+        <span>Load Testing</span><em>·</em>
+        <!-- duplicate for seamless loop -->
+        <span>Full Stack Testing</span><em>·</em>
+        <span>From Scratch</span><em>·</em>
+        <span>API Testing</span><em>·</em>
+        <span>UI Automation</span><em>·</em>
+        <span>Mobile Testing</span><em>·</em>
+        <span>Performance Testing</span><em>·</em>
+        <span>CI/CD Integration</span><em>·</em>
+        <span>Test Infrastructure</span><em>·</em>
+        <span>Quality Assurance</span><em>·</em>
+        <span>Load Testing</span><em>·</em>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ ABOUT ═══════ -->
+  <section class="s-about section" id="about">
+    <div class="container">
+      <div class="s-label">
+        <span class="s-num">01</span>
+        <span>About</span>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-left">
+          <h2 class="s-title">
+          <span class="reveal-line">Full stack software</span><br/>
+          <span class="reveal-line"><em>tester, from scratch.</em></span>
+        </h2>
+          <div class="about-body">
+            <p class="reveal-p">
+              I'm a <strong>Full Stack Software Tester</strong> who builds complete
+              testing ecosystems from scratch — covering every layer of the stack.
+              From the first unit test to full pipeline integration, I own the
+              entire quality process end-to-end.
+            </p>
+            <p class="reveal-p">
+              My approach spans <strong>API &amp; microservices</strong>, UI &amp; mobile
+              automation, load &amp; performance testing, and the CI/CD infrastructure
+              that ties it all together. No partial coverage — full stack, always.
+            </p>
+          </div>
+          <div class="about-cta-links reveal-p">
+            <a href="https://www.linkedin.com/in/riyan117/" target="_blank" rel="noopener" class="text-link">LinkedIn ↗</a>
+            <a href="https://github.com/Riyan117" target="_blank" rel="noopener" class="text-link">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="spec-grid">
+            <div class="spec-card reveal-card">
+              <div class="spec-ico">⚡</div>
+              <h3>API & Microservices</h3>
+              <p>Automated tests ensuring the reliability and speed of backend services.</p>
+            </div>
+            <div class="spec-card reveal-card">
+              <div class="spec-ico">💻</div>
+              <h3>UI & Mobile Automation</h3>
+              <p>Clean, maintainable automation frameworks for web and mobile interfaces.</p>
+            </div>
+            <div class="spec-card reveal-card">
+              <div class="spec-ico">🔥</div>
+              <h3>Performance & Load</h3>
+              <p>Identifying bottlenecks so apps handle real-world traffic with ease.</p>
+            </div>
+            <div class="spec-card reveal-card">
+              <div class="spec-ico">🏗</div>
+              <h3>CI/CD Infrastructure</h3>
+              <p>Integrating test automation into pipelines for rapid, reliable releases.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ SKILLS ═══════ -->
+  <section class="s-skills section" id="skills">
+    <div class="container">
+      <div class="s-label">
+        <span class="s-num">02</span>
+        <span>Skills & Tools</span>
+      </div>
+
+      <h2 class="s-title">
+        <span class="reveal-line">Tools I</span><br/>
+        <span class="reveal-line"><em>wield.</em></span>
+      </h2>
+
+      <div class="skills-layout">
+
+        <!-- UI / Mobile Automation -->
+        <div class="skill-cat reveal-card">
+          <h4 class="cat-name">UI / Mobile Automation</h4>
+          <div class="tools">
+            <div class="tool">
+              <img src="https://playwright.dev/img/playwright-logo.svg" alt="Playwright" class="t-icon" />
+              <span>Playwright</span>
+            </div>
+            <div class="tool">
+              <img src="https://cdn.simpleicons.org/appium/EE376D" alt="Appium" class="t-icon" />
+              <span>Appium</span>
+            </div>
+            <div class="tool">
+              <img src="https://katalon.com/favicon.ico" alt="Katalon" class="t-icon" />
+              <span>Katalon</span>
+            </div>
+            <div class="tool">
+              <img src="https://github.com/mobile-dev-inc.png?size=32" alt="Maestro" class="t-icon" />
+              <span>Maestro</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- API Testing -->
+        <div class="skill-cat reveal-card">
+          <h4 class="cat-name">API Testing</h4>
+          <div class="tools">
+            <div class="tool">
+              <img src="https://cdn.simpleicons.org/postman/FF6C37" alt="Postman" class="t-icon" />
+              <span>Postman</span>
+            </div>
+            <div class="tool">
+              <img src="https://playwright.dev/img/playwright-logo.svg" alt="Playwright API" class="t-icon" />
+              <span>Playwright API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Load & Performance -->
+        <div class="skill-cat reveal-card">
+          <h4 class="cat-name">Load & Performance</h4>
+          <div class="tools">
+            <div class="tool">
+              <img src="https://cdn.simpleicons.org/k6/7D64FF" alt="k6" class="t-icon" />
+              <span>k6</span>
+            </div>
+            <div class="tool">
+              <img src="https://github.com/apache.png?size=32" alt="JMeter" class="t-icon" />
+              <span>JMeter</span>
+            </div>
+            <div class="tool">
+              <img src="https://github.com/locustio.png?size=32" alt="Locust" class="t-icon" />
+              <span>Locust</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="skill-cat reveal-card">
+          <h4 class="cat-name">Languages</h4>
+          <div class="tools">
+            <div class="tool">
+              <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" class="t-icon" />
+              <span>TypeScript</span>
+            </div>
+            <div class="tool">
+              <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" class="t-icon" />
+              <span>JavaScript</span>
+            </div>
+            <div class="tool">
+              <img src="https://cdn.simpleicons.org/go/00ADD8" alt="Go" class="t-icon" />
+              <span>Go</span>
+            </div>
+            <div class="tool">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="t-icon" />
+              <span>Java</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CI/CD & Infra -->
+        <div class="skill-cat reveal-card">
+          <h4 class="cat-name">CI/CD & Infra</h4>
+          <div class="tools">
+            <div class="tool">
+              <img src="https://cdn.simpleicons.org/githubactions/2088FF" alt="GitHub Actions" class="t-icon" />
+              <span>GitHub Actions</span>
+            </div>
+            <div class="tool">
+              <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" class="t-icon" />
+              <span>Docker</span>
+            </div>
+            <div class="tool">
+              <img src="https://cdn.simpleicons.org/kubernetes/326CE5" alt="Kubernetes" class="t-icon" />
+              <span>Kubernetes</span>
+            </div>
+            <div class="tool">
+              <img src="https://cdn.simpleicons.org/gitlab/FC6D26" alt="GitLab CI/CD" class="t-icon" />
+              <span>GitLab CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ PROJECTS ═══════ -->
+  <section class="s-projects section" id="projects">
+    <div class="container">
+      <div class="s-label">
+        <span class="s-num">03</span>
+        <span>Projects</span>
+      </div>
+
+      <h2 class="s-title">
+        <span class="reveal-line">Work I'm</span><br/>
+        <span class="reveal-line"><em>proud of.</em></span>
+      </h2>
+
+      <div class="proj-scroll-wrapper">
+        <div class="proj-track">
+          <div class="proj-card proj-card--private">
+            <div class="proj-hd">
+              <span class="proj-lang private">&#128274; Private</span>
+              <span class="proj-client-tag">Gov · Indonesia</span>
+            </div>
+            <h3>K3I — Korlantas Polri</h3>
+            <p>End-to-end QA engagement for a national traffic management system under the Indonesian National Police. Covered UI automation, REST API validation, and load testing across multiple service environments.</p>
+            <div class="proj-tags">
+              <span>Playwright</span><span>Postman</span><span>k6</span><span>REST API</span><span>GitLab CI/CD</span>
+            </div>
+          </div>
+
+          <a href="https://github.com/Riyan117/atomik-dummy-api" target="_blank" rel="noopener" class="proj-card">
+            <div class="proj-hd">
+              <span class="proj-lang ts">TypeScript</span>
+              <span class="proj-arrow">↗</span>
+            </div>
+            <h3>atomik-dummy-api</h3>
+            <p>A dummy REST API built with TypeScript, designed as a mock server for automated test suites and rapid prototyping of API testing scenarios.</p>
+            <div class="proj-tags">
+              <span>TypeScript</span><span>REST API</span><span>Mock Server</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/Riyan117/doko-simple-fullstack" target="_blank" rel="noopener" class="proj-card">
+            <div class="proj-hd">
+              <span class="proj-lang js">JavaScript</span>
+              <span class="proj-arrow">↗</span>
+            </div>
+            <h3>doko-simple-fullstack</h3>
+            <p>A fullstack JavaScript application serving as a comprehensive test bed for UI and API automation, demonstrating end-to-end testing practices.</p>
+            <div class="proj-tags">
+              <span>JavaScript</span><span>Fullstack</span><span>Automation</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/Riyan117" target="_blank" rel="noopener" class="proj-card proj-all">
+            <span>View all repositories</span>
+            <span class="proj-big-arrow">→</span>
+          </a>
+        </div>
+      </div>
+      <!-- scroll progress indicator -->
+      <div class="proj-progress">
+        <div class="proj-progress-fill" id="projProgressFill"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CERTIFICATIONS ═══════ -->
+  <section class="s-certs section" id="certifications">
+    <div class="container">
+      <div class="s-label">
+        <span class="s-num">04</span>
+        <span>Certifications</span>
+      </div>
+
+      <h2 class="s-title">
+        <span class="reveal-line">Credentials &</span><br/>
+        <span class="reveal-line"><em>Achievements.</em></span>
+      </h2>
+
+      <div class="certs-list">
+
+        <div class="cert-item reveal-card">
+          <div class="cert-icon-wrap iw-fav" style="background:rgba(0,57,103,0.15);border-color:rgba(0,57,103,0.3)">
+            <img src="https://www.google.com/s2/favicons?domain=istqb.org&sz=64" width="32" height="32" alt="ISTQB">
+          </div>
+          <div class="cert-info">
+            <span class="cert-title">ISTQB Certified Foundation Level</span>
+            <span class="cert-org">International Software Testing Qualifications Board</span>
+          </div>
+          <span class="cert-badge">Foundation</span>
+        </div>
+
+        <div class="cert-item reveal-card">
+          <div class="cert-icon-wrap iw-svg" style="background:rgba(255,108,55,0.1);border-color:rgba(255,108,55,0.2)">
+            <img src="https://cdn.simpleicons.org/postman/FF6C37" width="26" height="26" alt="Postman">
+          </div>
+          <div class="cert-info">
+            <span class="cert-title">Postman API Fundamentals</span>
+            <span class="cert-org">Postman &mdash; API Testing &amp; Development</span>
+          </div>
+          <span class="cert-badge">Academy</span>
+        </div>
+
+        <div class="cert-item reveal-card">
+          <div class="cert-icon-wrap iw-svg" style="background:rgba(252,109,38,0.1);border-color:rgba(252,109,38,0.2)">
+            <img src="https://cdn.simpleicons.org/gitlab/FC6D26" width="26" height="26" alt="GitLab">
+          </div>
+          <div class="cert-info">
+            <span class="cert-title">GitLab University</span>
+            <span class="cert-org">DevOps &amp; CI/CD Fundamentals</span>
+          </div>
+          <span class="cert-badge">DevOps</span>
+        </div>
+
+        <div class="cert-item reveal-card">
+          <div class="cert-icon-wrap iw-fill">
+            <img src="https://github.com/katalon-studio.png?size=48" width="48" height="48" alt="Katalon">
+          </div>
+          <div class="cert-info">
+            <span class="cert-title">Katalon Academy</span>
+            <span class="cert-org">Test Automation with Katalon Studio</span>
+          </div>
+          <span class="cert-badge">Automation</span>
+        </div>
+
+        <div class="cert-item reveal-card">
+          <div class="cert-icon-wrap iw-fill">
+            <img src="https://github.com/applitools.png?size=48" width="48" height="48" alt="Applitools">
+          </div>
+          <div class="cert-info">
+            <span class="cert-title">Test Automation University</span>
+            <span class="cert-org">Applitools &mdash; Test Automation</span>
+          </div>
+          <span class="cert-badge">Automation</span>
+        </div>
+
+        <div class="cert-item reveal-card">
+          <div class="cert-icon-wrap iw-fav" style="background:rgba(251,188,4,0.1);border-color:rgba(251,188,4,0.2)">
+            <img src="https://www.google.com/s2/favicons?domain=eduwork.id&sz=64" width="32" height="32" alt="Eduwork">
+          </div>
+          <div class="cert-info">
+            <span class="cert-title">Eduwork SQA Graduate</span>
+            <span class="cert-org">Software Quality Assurance Bootcamp</span>
+          </div>
+          <span class="cert-badge">Bootcamp</span>
+        </div>
+
+        <div class="cert-item reveal-card">
+          <div class="cert-icon-wrap iw-fill">
+            <img src="https://github.com/dicodingacademy.png?size=48" width="48" height="48" alt="Dicoding">
+          </div>
+          <div class="cert-info">
+            <span class="cert-title">Dicoding Certified Developer</span>
+            <span class="cert-org">Software Development &amp; Quality</span>
+          </div>
+          <span class="cert-badge">Certified</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CONTACT ═══════ -->
+  <section class="s-contact section" id="contact">
+    <div class="contact-bg-txt" id="contactBg">QUALITY</div>
+    <div class="container">
+      <div class="s-label">
+        <span class="s-num">05</span>
+        <span>Contact</span>
+      </div>
+
+      <h2 class="contact-title">
+        <span class="reveal-line">Let's work</span><br/>
+        <span class="reveal-line"><em>together.</em></span>
+      </h2>
+
+      <p class="contact-sub reveal-p">
+        Need a QA Engineer who builds full stack testing<br/>
+        frameworks from scratch? Let's make it happen.
+      </p>
+
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/riyan117/" target="_blank" rel="noopener" class="c-link reveal-card">
+          <span class="c-link-label">LinkedIn</span>
+          <span class="c-link-val">in/riyan117 ↗</span>
+        </a>
+        <a href="https://github.com/Riyan117" target="_blank" rel="noopener" class="c-link reveal-card">
+          <span class="c-link-label">GitHub</span>
+          <span class="c-link-val">Riyan117 ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© 2026 Riyan. All rights reserved.</span>
+      <span>QA Engineer · Jakarta, Indonesia</span>
+    </div>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
