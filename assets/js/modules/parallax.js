@@ -1,4 +1,7 @@
 export function initParallax() {
+  const heroEl = document.getElementById('hero');
+  const isStoryActive = !!heroEl && heroEl.classList.contains('story-active');
+
   const heroST = {
     trigger: '.hero',
     start: 'top top',
@@ -6,10 +9,12 @@ export function initParallax() {
     scrub: 1.8,
   };
 
-  gsap.to('#glow1', { yPercent: -28, ease: 'none', scrollTrigger: { ...heroST, scrub: 2.5 } });
-  gsap.to('#glow2', { yPercent: -18, ease: 'none', scrollTrigger: { ...heroST, scrub: 2   } });
-  gsap.to('#decoA', { y: -130,       ease: 'none', scrollTrigger: { ...heroST, scrub: 1.2 } });
-  gsap.to('#decoB', { y: -75,        ease: 'none', scrollTrigger: { ...heroST, scrub: 1.8 } });
+  if (!isStoryActive) {
+    gsap.to('#glow1', { yPercent: -28, ease: 'none', scrollTrigger: { ...heroST, scrub: 2.5 } });
+    gsap.to('#glow2', { yPercent: -18, ease: 'none', scrollTrigger: { ...heroST, scrub: 2   } });
+    gsap.to('#decoA', { y: -130,       ease: 'none', scrollTrigger: { ...heroST, scrub: 1.2 } });
+    gsap.to('#decoB', { y: -75,        ease: 'none', scrollTrigger: { ...heroST, scrub: 1.8 } });
+  }
 
   gsap.to('#contactBg', {
     xPercent: -14,

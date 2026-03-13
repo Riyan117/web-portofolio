@@ -3,12 +3,12 @@
  * GSAP & ScrollTrigger are loaded via CDN <script> tags in index.html
  * and available as globals (window.gsap, window.ScrollTrigger).
  */
-import { initCursor }                                    from './modules/cursor.js';
-import { initNavbar }                                    from './modules/navbar.js';
-import { initHero }                                      from './modules/hero.js';
-import { initParallax }                                  from './modules/parallax.js';
-import { initScrollReveal, initSmoothAnchors, initCounters } from './modules/scrollReveal.js';
-import { initHorizontalScroll }                          from './modules/horizontalScroll.js';
+import { initCursor }                                    from './modules/cursor.js?v=20260313w';
+import { initNavbar }                                    from './modules/navbar.js?v=20260313w';
+import { initHero }                                      from './modules/hero.js?v=20260313w';
+import { initParallax }                                  from './modules/parallax.js?v=20260313w';
+import { initScrollReveal, initSmoothAnchors, initCounters } from './modules/scrollReveal.js?v=20260313w';
+import { initHorizontalScroll }                          from './modules/horizontalScroll.js?v=20260313w';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,12 +36,27 @@ if (window.matchMedia('(pointer: fine)').matches) {
   });
 }
 
-// ── Init modules ────────────────────────────────────────────────────────────
-initCursor();
-initNavbar();
-initHero();
-initParallax();
-initHorizontalScroll();
-initScrollReveal();
-initSmoothAnchors();
-initCounters();
+// ── Init modules (fault-tolerant) ───────────────────────────────────────────
+const initStatus = {};
+const safeInit = (name, fn) => {
+  try {
+    fn();
+    initStatus[name] = 'ok';
+  } catch (error) {
+    initStatus[name] = 'error';
+    console.error(`[init:${name}]`, error);
+  }
+};
+
+safeInit('cursor', initCursor);
+safeInit('navbar', initNavbar);
+safeInit('hero', initHero);
+safeInit('parallax', initParallax);
+safeInit('horizontalScroll', initHorizontalScroll);
+safeInit('scrollReveal', initScrollReveal);
+safeInit('smoothAnchors', initSmoothAnchors);
+safeInit('counters', initCounters);
+
+if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+  window.__initStatus = initStatus;
+}

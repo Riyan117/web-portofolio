@@ -126,6 +126,27 @@ img { display: block; max-width: 100%; }
   display: inline-block;
   opacity: 1;
   clip-path: inset(0 0 100% 0);
+  perspective: 900px;
+}
+
+.reveal-word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.reveal-word-inner {
+  display: inline-block;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.is-kinetic-title .reveal-word-inner {
+  transition: text-shadow 0.35s var(--ease), transform 0.35s var(--ease);
+}
+
+.is-kinetic-title:hover .reveal-word-inner {
+  text-shadow: 0 0 20px rgba(100, 255, 218, 0.18);
 }
 
 .reveal-p {
