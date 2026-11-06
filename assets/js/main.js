@@ -3,12 +3,12 @@
  * GSAP & ScrollTrigger are loaded via CDN <script> tags in index.html
  * and available as globals (window.gsap, window.ScrollTrigger).
  */
-import { initCursor }                                    from './modules/cursor.js?v=20260313w';
-import { initNavbar }                                    from './modules/navbar.js?v=20260313w';
-import { initHero }                                      from './modules/hero.js?v=20260313w';
-import { initParallax }                                  from './modules/parallax.js?v=20260313w';
-import { initScrollReveal, initSmoothAnchors, initCounters } from './modules/scrollReveal.js?v=20260313w';
-import { initHorizontalScroll }                          from './modules/horizontalScroll.js?v=20260313w';
+import { initCursor }                                    from './modules/cursor.js?v=20261107c';
+import { initNavbar }                                    from './modules/navbar.js?v=20261107c';
+import { initHero }                                      from './modules/hero.js?v=20261107c';
+import { initParallax }                                  from './modules/parallax.js?v=20261107c';
+import { initScrollReveal, initSmoothAnchors, initCounters } from './modules/scrollReveal.js?v=20261107c';
+import { initHorizontalScroll }                          from './modules/horizontalScroll.js?v=20261107c';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -56,6 +56,9 @@ safeInit('horizontalScroll', initHorizontalScroll);
 safeInit('scrollReveal', initScrollReveal);
 safeInit('smoothAnchors', initSmoothAnchors);
 safeInit('counters', initCounters);
+
+ScrollTrigger.sort();
+ScrollTrigger.refresh();
 
 if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
   window.__initStatus = initStatus;

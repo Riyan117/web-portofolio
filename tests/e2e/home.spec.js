@@ -40,4 +40,16 @@ test.describe('Homepage — render & content', () => {
   test('navbar is visible', async ({ page }) => {
     await expect(page.locator('#navbar')).toBeVisible();
   });
+
+  test('experience section lists current AI LLM Quality Engineer role', async ({ page }) => {
+    const expItems = page.locator('#experience .exp-item');
+    await expect(expItems).toHaveCount(4);
+    await expect(expItems.first()).toContainText('AI LLM Quality Engineer');
+  });
+
+  test('certifications section lists all 8 credentials', async ({ page }) => {
+    const certItems = page.locator('#certifications .cert-item');
+    await expect(certItems).toHaveCount(8);
+    await expect(certItems.first()).toContainText('LFEL1012');
+  });
 });

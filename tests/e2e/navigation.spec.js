@@ -41,4 +41,11 @@ test.describe('Navigation', () => {
     await page.waitForTimeout(800);
     await expect(page.locator('#projects')).toBeInViewport();
   });
+
+  test('clicking Experience link scrolls to experience section', async ({ page }) => {
+    const expLink = page.locator('a[href="#experience"]').first();
+    await expLink.click();
+    await page.waitForTimeout(800);
+    await expect(page.locator('#experience')).toBeInViewport();
+  });
 });

@@ -23,7 +23,7 @@ export function initCursor() {
   })();
 
   const hoverTargets = document.querySelectorAll(
-    'a, button, .proj-card, .spec-card, .cert-row, .skill-cat, .c-link'
+    'a, button, .proj-card, .spec-card, .exp-item, .cert-item, .cert-row, .skill-cat, .c-link'
   );
 
   hoverTargets.forEach((el) => {

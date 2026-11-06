@@ -42,33 +42,11 @@
   100% { background-position: 200% center; }
 }
 
-@keyframes shimmerChar {
-  0%, 60%, 100% {
-    color: var(--text);
-    text-shadow: none;
+@keyframes shimmerSweep {
+  0%, 15% {
+    background-position: 140% 50%;
   }
-  30% {
-    color: #ffffff;
-    text-shadow:
-      0 0 6px  rgba(255,255,255,1),
-      0 0 20px rgba(180,255,240,0.8),
-      0 0 50px rgba(100,255,218,0.5),
-      0 0 90px rgba(100,255,218,0.25);
-  }
-}
-
-@keyframes glowAccent {
-  0%, 60%, 100% {
-    color: var(--accent);
-    text-shadow: 0 0 10px rgba(100,255,218,0.4);
-  }
-  30% {
-    color: #ffffff;
-    text-shadow:
-      0 0 6px  #ffffff,
-      0 0 16px #64ffda,
-      0 0 40px rgba(100,255,218,0.9),
-      0 0 80px rgba(100,255,218,0.6),
-      0 0 140px rgba(100,255,218,0.3);
+  55%, 100% {
+    background-position: -40% 50%;
   }
 }
